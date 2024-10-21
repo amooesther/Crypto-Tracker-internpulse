@@ -1,0 +1,112 @@
+.home{
+    padding: 0px 10px;
+    padding-bottom: 100px;
+}
+.hero{
+    max-width: 600px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.hero h1{
+    font-size: 4em;
+}
+.hero p{
+    font-size: 1em;
+    color:#ecedff;
+}
+.hero form{
+    padding: 8px;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.hero input{
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+.hero button{
+    border: none;
+    background-color: #091ffc;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cryptoList {
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 15px;
+    background: linear-gradient(to right, #091ffc, #00f6ff);
+    overflow-x: auto; 
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1.2fr 1.2fr 2fr 2fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #8992fa;
+    text-align: left;
+}
+
+.marketCapital {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.layout:last-child{
+    border-bottom: none;
+}
+.layout div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.layout div img{
+    width: 30px;
+}
+.layout .green{
+    color: greenyellow;
+    text-align: center;
+}
+.layout .red{
+    color: red;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .layout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+   
+}
+.marketCapital{
+    display: none;
+}
+}
+@media (max-width:500px) {
+    .layout div img {
+      width: 25px;
+   
+}
+.layout{
+    font-size: 13px;
+}
+.hero form input{
+    width: 100px;
+}
+}
