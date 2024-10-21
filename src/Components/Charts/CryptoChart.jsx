@@ -23,14 +23,8 @@ const CryptoChart = ({ coinChart }) => {
       <Chart
         chartType='LineChart'
         data={data}
-        height="400px"
-        options={{
-          title: 'Crypto Prices Over Time',
-          curveType: 'function',
-          legend: { position: 'bottom' },
-          hAxis: { title: 'Date' },
-          vAxis: { title: 'Price' },
-        }}
+        height="100%"
+        legendToggle
       />
     </div>
   );
