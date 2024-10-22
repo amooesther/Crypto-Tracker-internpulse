@@ -43,8 +43,8 @@ useEffect(() => {
             <div className="layout">
                 <p>#</p>
                 <p>Coins</p>
-                <p>Price</p>
-                <p style={{textAlign:'center'}}>24 Hour Change</p>
+                <p>Current Price</p>
+                <p style={{textAlign:'center'}}>24hr Price Change</p>
                 <p className='marketCapital'>Market Capital</p>
                 <p className='marketCapital'>Trading Vol.</p>
                 
