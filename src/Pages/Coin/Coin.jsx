@@ -33,7 +33,7 @@ const fetchCoinChart = async () => {
     headers: {accept: 'application/json', 'x-cg-demo-api-key': 'CG-vfLrFfoNeWX9BqwKUtFzz2hN'}
   };
   
-  fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=${currency.name}&days=10&interval=daily`, options)
+  fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=${currency.name}&days=5&interval=daily`, options)
     .then(response => response.json())
     .then(response => setCoinChart(response))
     .catch(err => console.error(err));
